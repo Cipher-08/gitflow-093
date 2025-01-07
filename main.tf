@@ -8,3 +8,9 @@ resource "aws_vpc" "infra_vpc" {
     Name = "Infrasity-vpc"
   }
 }
+
+resource "aws_s3_bucket" "analytics_bucket" {
+  bucket = "analytics-feature-bucket"
+  acl    = "private"
+}
+
